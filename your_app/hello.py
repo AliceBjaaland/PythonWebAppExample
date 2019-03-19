@@ -7,7 +7,7 @@ def hello():
     return "Hell) World"
 
 
-@app.route("/signup", methods=["POST", "GET"])
+@app.route("/signup", methods=["POST"])
 def sign_up():
     if request.method == 'POST':
         form_data = request.form
